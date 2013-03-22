@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>theHunter Map</title>
+<link rel="stylesheet" href="maps.css">
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/huntermap-const.js"></script>
+<script type="text/javascript" src="js/huntermap-locations.js"></script>
+<script type="text/javascript" src="js/huntermap.js"></script>
+<script type="text/javascript">
+        var map;
+        function initialize() {
+         HMap.map.init(document.getElementById("map_canvas"));
+        }
+</script>
+</head>
+<body onload="initialize()" style="margin: 2px; padding: 0; background-color: #f1733c;">
+<div id="legend">
+<table style="width: 100%"><tr>
+<td valign="top" style="width: 200px"><img src="images/thlogo.png"></td>
+<td class= "legendicons">
+<table style="width: 100%" id="table1">
+<tr><td style="width: 20px; height: 20px"><img src="images/archeryrange.png" width="14" height="17"></td><td>Archery Range</td><td style="width: 20px; height: 20px"><img src="images/riflerange.png" width="13" height="15"></td><td>Rifle Range</td><td style="width: 20px; height: 20px"><img src="images/cave.png" width="20" height="16"></td><td>Cave</td><td style="width: 20px; height: 20px"><img src="images/building.png" width="20" height="12"></td><td>Work Building</td><td style="width: 20px; height: 20px"><img src="images/smallbarn.png" width="19" height="19"></td><td>Small Barn</td><td>&nbsp;</td><td style="width: 20px; height: 20px"><img src="images/fortdavid.png" width="20" height="16"></td><td>Fort David</td></tr>
+<tr><td style="width: 20px; height: 20px"><img src="images/car.png" width="20" height="13"></td><td>Old Car</td><td style="width: 20px; height: 20px"><img src="images/tower.png"></td><td>Tower</td><td style="width: 20px; height: 20px"><img src="images/lodge.png" width="20" height="13"></td><td>Lodge</td><td style="width: 20px; height: 20px"><img src="images/clayshoot.png" width="16" height="13"></td><td>Clay Shoot</td><td style="width: 20px; height: 20px"><img src="images/hut.png" width="20" height="18"></td><td>Trapper&#39;s Hut</td><td>&nbsp;</td><td style="width: 20px; height: 20px"><img src="images/powerpole.png" width="15" height="16"></td><td>Power Pole</td></tr>
+<tr><td style="width: 20px; height: 20px"><img src="images/largebarn.png" width="20" height="18"></td><td>Large Barn</td><td style="width: 20px; height: 20px"><img src="images/awistones.png" width="20" height="14"></td><td>Awi Usdi Stones</td><td style="width: 20px; height: 20px"><img src="images/runnerspeak.png" width="20" height="18"></td><td>Runners Peak</td><td style="width: 20px; height: 20px"><img src="images/logpile.png" width="20" height="12"></td><td>Logpile</td><td style="width: 20px; height: 20px"><img src="images/campsite.png" width="20" height="20"></td><td>Campsite</td><td>&nbsp;</td><td style="width: 20px; height: 20px"><img src="images/wagon.png" width="20" height="16"></td><td>Wagon</td></tr>
+</table>
+</td>
+<td valign="top" style="width: 170px"><img src="images/ewlogo.png"></td></tr>
+</table>
+</div>
+<div id="map_canvas">map div</div>
+</body>
+</html>
+
+

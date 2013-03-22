@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FSM</title>
+	<link href="css/fsm.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<div id="top" class="horz"></div>
+	<div id="left" class="vert"></div>
+   	<div id="map_canvas"></div>
+    <div id="right" class="vert"></div>
+	<div id="bottom" class="horz"></div>
+		
+	<div id="lefttop" class="corner"></div>
+	<div id="righttop" class="corner"></div>
+	<div id="leftbottom" class="corner"></div>
+	<div id="rightbottom" class="corner"></div>
+
+	<div id="coordpanelcontainer">
+		<div class="coordpanel">
+			<div class="header">Cursor Coordinates:&nbsp; 
+			X: <span id="cursorx"></span>&nbsp;&nbsp;-&nbsp;&nbsp;
+			Y: <span id="cursory"></span><br></div>
+		</div>
+	</div>
+
+    <script type="text/javascript">
+		var hunter_domain = {
+			map: "map.thehunter.com"
+		};
+    </script> 
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/map/huntermap.js"></script>
+	<script type="text/javascript" src="js/fsm.js"></script>
+</body>
+</html>
