@@ -124,7 +124,7 @@ HMap.marker = function(location, map, disableInfoWindows, onclick) {
 
 	this.marker = new google.maps.Marker({
 		title: location.title,
-		icon: HMap.markerTypes[location.type].icon[this.iconType][this.iconSize(map)],
+		icon: HMap.markerTypes[location.type].icon[this.iconSize(map)],
 		position: HMap.map.toLatLng(new google.maps.Point(location.map_x, location.map_z)),
 		map: map
 	});
@@ -167,7 +167,7 @@ HMap.marker.prototype = {
 				this.iconType = iconType;
 		}
 
-		this.marker.setIcon(HMap.markerTypes[this.location.type].icon[iconType][this.iconSize()])
+		this.marker.setIcon(HMap.markerTypes[this.location.type].icon[this.iconSize()])
 		this.marker.setVisible(this.getVisibleState());
 	},
 
