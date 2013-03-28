@@ -32,18 +32,23 @@
 		init: function(data) {
 			fsm.data = data;
 
-			var playerLatLng = HMap.map.toLatLng({x: data.player.x, y: data.player.z});
+			var centerLatLng = HMap.map.toLatLng({
+				x: 8914,
+				y: 1049
+			});
 
 			if (fsm.map === null) {
 				HMap.map.init(document.getElementById("map_canvas"), {
 					zoom: 14,
-					center: playerLatLng
+					center: centerLatLng
 				});
 				fsm.map = HMap.map.getMap();
 
 				fsm.initListeners();
+
+				HMap.markers.add(HMap.locations);
 			} else {
-				fsm.map.panTo(playerLatLng);
+				fsm.map.panTo(centerLatLng);
 			}
 
 		},
