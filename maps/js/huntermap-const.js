@@ -1,7 +1,7 @@
 var HMap = HMap || {};
 
 HMap.mapTypeId = {
-	SATELLITE: "theHunter_satellite"
+	SATELLITE: "thehunter_satellite"
 };
 
 HMap.markerTypeId = {
