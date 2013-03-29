@@ -60,9 +60,8 @@ body {
 #right {
 	top: 0;
 	right: 0;
-	background-image: url(../gfx/edge_side.png);
+	background-image: url(../gfx/edge_sider.png);
 	background-repeat: repeat-y;
-	-webkit-transform: scaleX(-1);
 }
 
 .corner {
@@ -82,8 +81,7 @@ body {
 #righttop {
 	right: 0;
 	top: 0;
-	background-image: url(../gfx/corner_top.png);
-	-webkit-transform: scaleX(-1);
+	background-image: url(../gfx/corner_topr.png);
 }
 
 #leftbottom {
@@ -95,8 +93,7 @@ body {
 #rightbottom {
 	right: 0;
 	bottom: 0;
-	background-image: url(../gfx/corner_bottom.png);
-	-webkit-transform: scaleX(-1);
+	background-image: url(../gfx/corner_bottomr.png);
 }
 
 .coordpanel .header {
