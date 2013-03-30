@@ -26,6 +26,9 @@ HMap.map = (function() {
 
 	            gmap = new google.maps.Map(div, options);
 
+            // update markers when zoom level is changed
+            google.maps.event.addListener(gmap, 'zoom_changed', HMap.markers.update);
+
 		    HMap.mapTypes.set(gmap);
 
 	            return gmap;
