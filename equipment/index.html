@@ -1,22 +1,63 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-<title>theHunter Map</title>
-<link rel="stylesheet" href="maps.css">
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript" src="js/huntermap-const.js"></script>
-<script type="text/javascript" src="js/huntermap-locations.js"></script>
-<script type="text/javascript" src="js/huntermap.js"></script>
-<script type="text/javascript">
-        var map;
-        function initialize() {
-         HMap.map.init(document.getElementById("map_canvas"));
-        }
-</script>
+	<title>NAOutdoors Equipment - Locations for Tents, Treestands, Tripods, Groundblinds and Bait Barrels.</title>
+	<link href="css/mapstyle.css" rel="stylesheet" type="text/css" />
 </head>
-<body onload="initialize()" style="margin: 1px; padding: 0; background-color: #390000;">
-<div id="map_canvas">map div</div>
+<body>
+	<div id="top" class="horz"></div>
+	<div id="left" class="vert"></div>
+   	<div id="map_canvas"></div>
+    <div id="right" class="vert"></div>
+	<div id="bottom" class="horz"></div>
+		
+	<div id="lefttop" class="corner"></div>
+	<div id="righttop" class="corner"></div>
+	<div id="leftbottom" class="corner"></div>
+	<div id="rightbottom" class="corner"></div>
+
+	<div id="titlecontainer">
+		<div>NAOutdoors Equipment - Locations for Tents, Treestands, Tripods, Groundblinds and Bait Barrels.</div>
+		</div>
+	</div>
+	
+	<div id="legendcontainer">
+<table>
+  <tr>
+    <td><img src="gfx/lodge.png"></td><td>Lodge</td></tr>
+  <tr><td><img src="gfx/campsite.png"></td><td>Campsite</td></tr>
+  <tr><td><img src="gfx/tower.png"></td><td>Tower</td></tr>
+  <tr><td><img src="gfx/landmarker.png"></td><td>Land Marker</td></tr>
+  <tr><td><img src="gfx/poi.png"></td><td>Point Of Interest</td></tr>
+  <tr><td><img src="gfx/archeryrange.png"></td><td>Archery Range</td></tr>
+  <tr><td><img src="gfx/gunrange.png"></td><td>Gun Range</td></tr>
+  <tr><td><img src="gfx/singleclay.png"></td><td>Single Clay Shoot</td></tr>
+  <tr><td><img src="gfx/doubleclay.png"></td><td>Double Clay Shoot</td></tr>
+  <tr><td><img src="gfx/powerpole.png"></td><td>Powerpole</td></tr>
+  <tr><td><img src="gfx/windturbine.png"></td><td>Wind Turbine</td></tr>
+  <tr><td><img src="gfx/baitbarrel.png"></td><td>Bait Barrel</td></tr>
+  <tr><td><img src="gfx/groundblind.png"></td><td>Groundblind</td></tr>
+  <tr><td><img src="gfx/treestand.png"></td><td>Treestand</td></tr>
+  <tr><td><img src="gfx/tripod.png"></td><td>Tripod</td></tr>
+  <tr><td><img src="gfx/tentorange.png"></td><td>Tent (Orange)</td></tr>
+  <tr><td><img src="gfx/tentforestcamo.png"></td><td>Tent (Forest Camo)</td></tr>
+  <tr><td><img src="gfx/tentsnowcamo.png"></td><td>Tent (Snow Camo)</td></tr>
+</table>
+		</div>
+	</div>
+	
+	<div id="coordpanelcontainer">
+		<div class="coordpanel">
+			<div class="header">Cursor Coordinates:&nbsp; 
+			X: <span id="cursorx"></span>&nbsp;&nbsp;-&nbsp;&nbsp;
+			Y: <span id="cursory"></span><br></div>
+		</div>
+	</div>
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/map/huntermap.js"></script>
+    <script type="text/javascript" src="js/huntermap-const.js"></script>
+    <script type="text/javascript" src="js/huntermap-locations.js"></script>        
+    <script type="text/javascript" src="js/fsm.js"></script>
 </body>
 </html>
-
-

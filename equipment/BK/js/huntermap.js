@@ -16,6 +16,9 @@ HMap.map = (function() {
 	        options.navigationControl = true;
 	        options.scaleControl = false;
 			options.backgroundColor = "#0f3b4f";
+			
+			options.mapTypeControl = true;   
+			options.mapTypeControlOptions = { mapTypeIds: ['th_satellite', 'th_default'] };
 	
 	        gmap = new google.maps.Map(div, options);
 	

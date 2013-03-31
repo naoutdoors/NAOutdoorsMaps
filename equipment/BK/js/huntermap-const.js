@@ -1,7 +1,7 @@
 ﻿var HMap = HMap || {};
 
 HMap.mapTypeId = {
-	SATELLITE: "thehunter_satellite"
+	SATELLITE: "theHunter_satellite"
 };
 
 HMap.markerTypeId = {
@@ -15,13 +15,16 @@ HMap.markerTypeId = {
 	CAMPSITE: 7,
 	POI: 8,
 	POWERPOLE: 9,
+	LARGEBARN: 70,
+	SMALLBARN: 73,
+	BORDER: 120,
+	HUT: 121,
 	TENTO: 122,
 	GROUNDBLIND: 123,
 	TREESTAND: 124,
 	BEARBAITBARREL: 125,
 	TRIPOD: 126,
-	TENTC: 127,
-	TENTS: 128
+	TENTC: 127
 };
 
 HMap.markerTypes = {};
@@ -119,6 +122,82 @@ new google.maps.Point(111, 0),
 new google.maps.Point(8, 8)
 )
     ]
+};
+
+HMap.markerTypes[HMap.markerTypeId.LARGEBARN] = {
+    minZoom: 15,
+    maxZoom: 16,
+    icon: [
+new google.maps.MarkerImage(
+"gfx/mapicons32.png",
+new google.maps.Size(33, 32),
+new google.maps.Point(470, 0),
+new google.maps.Point(16, 16)
+),
+new google.maps.MarkerImage(
+"gfx/mapicons16.png",
+new google.maps.Size(18, 16),
+new google.maps.Point(234, 0),
+new google.maps.Point(8, 8)
+)
+    ]
+};
+
+HMap.markerTypes[HMap.markerTypeId.SMALLBARN] = {
+    minZoom: 15,
+    maxZoom: 16,
+    icon: [
+new google.maps.MarkerImage(
+"gfx/mapicons32.png",
+new google.maps.Size(25, 32),
+new google.maps.Point(507, 0),
+new google.maps.Point(16, 16)
+),
+new google.maps.MarkerImage(
+"gfx/mapicons16.png",
+new google.maps.Size(14, 16),
+new google.maps.Point(253, 0),
+new google.maps.Point(8, 8)
+)
+    ]
+};
+
+HMap.markerTypes[HMap.markerTypeId.BORDER] = {
+    minZoom: 13,
+    maxZoom: 16,
+    icon: [
+new google.maps.MarkerImage(
+"gfx/border5x5.png",
+new google.maps.Size(32, 32),
+new google.maps.Point(0, 0),
+new google.maps.Point(16, 16)
+),
+new google.maps.MarkerImage(
+"gfx/border2x2.png",
+new google.maps.Size(16, 16),
+new google.maps.Point(0, 0),
+new google.maps.Point(8, 8)
+)
+    ]
+};
+
+HMap.markerTypes[HMap.markerTypeId.HUT] = {
+	minZoom: 13,
+	maxZoom: 16,
+	icon: [
+	 	new google.maps.MarkerImage(
+			"gfx/mapicons32.png",
+			new google.maps.Size(32, 32),
+			new google.maps.Point(668, 0),
+			new google.maps.Point(16, 16)
+		),
+	 	new google.maps.MarkerImage(
+			"gfx/mapicons16.png",
+			new google.maps.Size(17, 16),
+			new google.maps.Point(382, 0),
+			new google.maps.Point(8, 8)
+		)
+	]
 };
 
 HMap.markerTypes[HMap.markerTypeId.WINDTURBINE] = {
@@ -325,25 +404,6 @@ HMap.markerTypes[HMap.markerTypeId.TENTC] = {
 			"gfx/mapicons16.png",
 			new google.maps.Size(12, 16),
 			new google.maps.Point(335, 0),
-			new google.maps.Point(8, 8)
-		)
-	]
-};
-
-HMap.markerTypes[HMap.markerTypeId.TENTS] = {
-	minZoom: 11,
-	maxZoom: 16,
-	icon: [
-	 	new google.maps.MarkerImage(
-			"gfx/mapicons32.png",
-			new google.maps.Size(23, 32),
-			new google.maps.Point(698, 0),
-			new google.maps.Point(16, 16)
-		),
-	 	new google.maps.MarkerImage(
-			"gfx/mapicons16.png",
-			new google.maps.Size(12, 16),
-			new google.maps.Point(349, 0),
 			new google.maps.Point(8, 8)
 		)
 	]
