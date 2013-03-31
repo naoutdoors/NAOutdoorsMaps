@@ -20,7 +20,8 @@ HMap.markerTypeId = {
 	TREESTAND: 124,
 	BEARBAITBARREL: 125,
 	TRIPOD: 126,
-	TENTC: 127
+	TENTC: 127,
+	TENTS: 128
 };
 
 HMap.markerTypes = {};
@@ -324,6 +325,25 @@ HMap.markerTypes[HMap.markerTypeId.TENTC] = {
 			"gfx/mapicons16.png",
 			new google.maps.Size(12, 16),
 			new google.maps.Point(335, 0),
+			new google.maps.Point(8, 8)
+		)
+	]
+};
+
+HMap.markerTypes[HMap.markerTypeId.TENTS] = {
+	minZoom: 11,
+	maxZoom: 16,
+	icon: [
+	 	new google.maps.MarkerImage(
+			"gfx/mapicons32.png",
+			new google.maps.Size(23, 32),
+			new google.maps.Point(698, 0),
+			new google.maps.Point(16, 16)
+		),
+	 	new google.maps.MarkerImage(
+			"gfx/mapicons16.png",
+			new google.maps.Size(12, 16),
+			new google.maps.Point(349, 0),
 			new google.maps.Point(8, 8)
 		)
 	]
